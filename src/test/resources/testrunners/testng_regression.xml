@@ -11,10 +11,8 @@
 		<listener class-name="com.qa.hubspot.listeners.pdfListener" />
 		<listener class-name="com.qa.hubspot.listeners.TestAllureListener" />
 		<listener class-name="com.qa.hubspot.listeners.TesultsListener" />
-
 	</listeners>
-
-
+	
 	<test name="Login page Test">
 		<parameter name="browser" value="chrome" />
 		<classes>
@@ -22,21 +20,11 @@
 		</classes>
 	</test>
 
-	<test name="Home page Test">
-		<parameter name="browser" value="firefox" />
-
-		<classes>
-			<class name="com.qa.hubspot.tests.HomePageTest" />
-		</classes>
-	</test>
-
-	<test name="Contacts page Test">
-		<parameter name="browser" value="firefox" />
-
-		<classes>
-			<class name="com.qa.hubspot.tests.ContactsPageTest" />
-		</classes>
-	</test> 
+	<!-- <test name="Home page Test"> <parameter name="browser" value="firefox" 
+		/> <classes> <class name="com.qa.hubspot.tests.HomePageTest" /> </classes> 
+		</test> <test name="Contacts page Test"> <parameter name="browser" value="firefox" 
+		/> <classes> <class name="com.qa.hubspot.tests.ContactsPageTest" /> </classes> 
+		</test> -->
 
 
 </suite>
