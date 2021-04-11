@@ -27,6 +27,7 @@ public class LoginPageTest extends BaseTest{
 		String title = loginPage.getLoginPageTitle();
 		System.out.println("Login Page Title is:" +title);
 		Assert.assertEquals(title,Constants.Login_Page_Title);
+//		message: Validation error on display of invalid title .
 	}
 	
 	@Description("Verify sign up link test...")
@@ -34,6 +35,7 @@ public class LoginPageTest extends BaseTest{
 	@Test(priority=1)
 	public void VerifySignUpLinkTest() {
 		Assert.assertTrue(loginPage.isSignUpLinkExist());
+//        message : validation error if Signup link is not available .
 	}
 	
 	@Description("Veryfy login feature test....")
@@ -41,6 +43,7 @@ public class LoginPageTest extends BaseTest{
 	@Test(priority=3)
 	public void loginTest() {
 		loginPage.doLogin(prop.getProperty("username"),prop.getProperty("password"));
+
 	}	
 	
 }
